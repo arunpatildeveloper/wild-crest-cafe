@@ -13,7 +13,9 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <img src="images/logo.jpeg" alt="Wild Crest Logo" class="logo-img">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-coffee-bean"></i>
+                </div>
                 <span class="logo-text">Wild Crest</span>
             </a>
             
@@ -40,44 +42,134 @@
     </section>
 
     <!-- Bangalore Branches -->
-    <section class="locations-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Bangalore Branches</h2>
-                <p class="section-subtitle">Urban cafés for coffee lovers in the city</p>
-            </div>
-            
-            <div class="locations-grid">
-                <div class="location-card">
-                    <div class="location-img">
-                        <img src="images/cafe/indiranagar.jpeg" alt="Wild Crest Indiranagar">
+    <section class="branches-container">
+        <div class="section-header">
+            <h2 class="section-title">Our Branches</h2>
+            <p class="section-subtitle">Premium café experiences across Bangalore and the highway</p>
+        </div>
+        
+        <div class="locations-grid">
+            <!-- Indiranagar Branch -->
+            <div class="location-card">
+                <div class="location-image">
+                    <img src="images/cafe/indiranagar.jpeg" alt="Wild Crest Indiranagar">
+                </div>
+                <div class="location-content">
+                    <div class="location-header">
+                        <h3 class="location-title">Wild Crest – Indiranagar</h3>
+                        <span class="location-badge">City Café</span>
                     </div>
-                    <div class="location-content">
-                        <h3>Wild Crest – Indiranagar</h3>
-                        <p class="location-address">12th Main, Indiranagar, Bangalore</p>
-                        <p class="location-hours"><i class="fas fa-clock"></i> 7:00 AM - 12:00 AM</p>
-                        <p class="location-desc">Our flagship café in the heart of Indiranagar. Features indoor and outdoor seating, perfect for meetings, work sessions, or relaxing coffee breaks.</p>
-                        <div class="location-features">
-                            <span><i class="fas fa-wifi"></i> Free WiFi</span>
-                            <span><i class="fas fa-parking"></i> Parking</span>
-                            <span><i class="fas fa-users"></i> Group Seating</span>
+                    
+                    <p class="location-address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        12th Main, Indiranagar, Bangalore
+                    </p>
+                    
+                    <p class="location-hours">
+                        <i class="fas fa-clock"></i>
+                        7:00 AM - 12:00 AM
+                    </p>
+                    
+                    <p class="location-description">
+                        Our flagship café in the heart of Indiranagar. Features indoor and outdoor seating, perfect for meetings, work sessions, or relaxing coffee breaks. Experience premium coffee in a sophisticated urban setting.
+                    </p>
+                    
+                    <div class="location-features">
+                        <h4>Facilities:</h4>
+                        <div class="features-list">
+                            <span class="feature-tag"><i class="fas fa-wifi"></i> Free WiFi</span>
+                            <span class="feature-tag"><i class="fas fa-parking"></i> Parking</span>
+                            <span class="feature-tag"><i class="fas fa-users"></i> Group Seating</span>
+                            <span class="feature-tag"><i class="fas fa-plug"></i> Power Outlets</span>
+                            <span class="feature-tag"><i class="fas fa-laptop"></i> Work Friendly</span>
                         </div>
                     </div>
                 </div>
-                
-                <div class="location-card">
-                    <div class="location-img">
-                        <img src="images/cafe/whitefield.jpeg" alt="Wild Crest Whitefield">
+            </div>
+            
+            <!-- Whitefield Branch -->
+            <div class="location-card">
+                <div class="location-image">
+                    <img src="images/cafe/whitefield.jpeg" alt="Wild Crest Whitefield">
+                </div>
+                <div class="location-content">
+                    <div class="location-header">
+                        <h3 class="location-title">Wild Crest – Whitefield</h3>
+                        <span class="location-badge">Tech Hub</span>
                     </div>
-                    <div class="location-content">
-                        <h3>Wild Crest – Whitefield</h3>
-                        <p class="location-address">ITPL Road, Whitefield, Bangalore</p>
-                        <p class="location-hours"><i class="fas fa-clock"></i> 7:00 AM - 12:00 AM</p>
-                        <p class="location-desc">Located in the tech hub of Bangalore, this branch caters to professionals and students with ample seating, power outlets, and a quiet ambiance.</p>
-                        <div class="location-features">
-                            <span><i class="fas fa-wifi"></i> Free WiFi</span>
-                            <span><i class="fas fa-plug"></i> Power Outlets</span>
-                            <span><i class="fas fa-laptop"></i> Work Friendly</span>
+                    
+                    <p class="location-address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        ITPL Road, Whitefield, Bangalore
+                    </p>
+                    
+                    <p class="location-hours">
+                        <i class="fas fa-clock"></i>
+                        7:00 AM - 12:00 AM
+                    </p>
+                    
+                    <p class="location-description">
+                        Located in the tech hub of Bangalore, this branch caters to professionals and students with ample seating, power outlets, and a quiet ambiance. Perfect for work meetings, study sessions, or coffee breaks.
+                    </p>
+                    
+                    <div class="location-features">
+                        <h4>Facilities:</h4>
+                        <div class="features-list">
+                            <span class="feature-tag"><i class="fas fa-wifi"></i> High-Speed WiFi</span>
+                            <span class="feature-tag"><i class="fas fa-plug"></i> Charging Stations</span>
+                            <span class="feature-tag"><i class="fas fa-laptop"></i> Work-Friendly</span>
+                            <span class="feature-tag"><i class="fas fa-conference"></i> Meeting Space</span>
+                            <span class="feature-tag"><i class="fas fa-print"></i> Printing Services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Highway Branch -->
+            <div class="location-card">
+                <div class="location-image">
+                    <img src="images/cafe/highway-night.jpeg" alt="Wild Crest Highway Café">
+                </div>
+                <div class="location-content">
+                    <div class="location-header">
+                        <h3 class="location-title">Wild Crest – Highway Café</h3>
+                        <span class="location-badge">24/7 Open</span>
+                    </div>
+                    
+                    <p class="location-address">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Bangalore–Mysore Highway, Ramanagara
+                    </p>
+                    
+                    <p class="location-hours">
+                        <i class="fas fa-clock"></i>
+                        24/7 Open All Days
+                    </p>
+                    
+                    <p class="location-description">
+                        Our unique highway café designed as a welcoming pit stop for travelers. Open round the clock to serve night travelers, bus passengers, and long-distance commuters. A warm oasis on the highway.
+                    </p>
+                    
+                    <div class="location-features">
+                        <h4>Facilities:</h4>
+                        <div class="features-list">
+                            <span class="feature-tag"><i class="fas fa-bus"></i> Bus Parking</span>
+                            <span class="feature-tag"><i class="fas fa-car"></i> Car Parking</span>
+                            <span class="feature-tag"><i class="fas fa-bed"></i> Rest Area</span>
+                            <span class="feature-tag"><i class="fas fa-restroom"></i> Clean Restrooms</span>
+                            <span class="feature-tag"><i class="fas fa-car-battery"></i> Charging Points</span>
+                        </div>
+                    </div>
+                    
+                    <div class="audience-section">
+                        <h4>Popular Among:</h4>
+                        <div class="audience-tags">
+                            <span class="audience-tag">Night Travelers</span>
+                            <span class="audience-tag">Bus Passengers</span>
+                            <span class="audience-tag">Long-Distance Commuters</span>
+                            <span class="audience-tag">Night Riders</span>
+                            <span class="audience-tag">Truck Drivers</span>
+                            <span class="audience-tag">Tourists</span>
                         </div>
                     </div>
                 </div>
@@ -85,57 +177,33 @@
         </div>
     </section>
 
-    <!-- Highway Café Experience -->
-    <section class="highway-section">
-        <div class="container">
+    <!-- Highway Gallery -->
+    <section class="highway-gallery-section">
+        <div class="highway-gallery-container">
             <div class="section-header">
                 <h2 class="section-title">Highway Café Experience</h2>
-                <p class="section-subtitle">A welcoming stop for night travelers</p>
+                <p class="section-subtitle">A warm welcome for every traveler</p>
             </div>
             
-            <div class="highway-location">
-                <div class="highway-content">
-                    <div class="highway-text">
-                        <h3>Wild Crest – Bangalore–Mysore Highway</h3>
-                        <p class="location-address">Bangalore–Mysore Highway, Ramanagara</p>
-                        <p class="location-hours"><i class="fas fa-clock"></i> 24/7 Open</p>
-                        <p class="location-desc">Our unique highway café designed as a welcoming pit stop for travelers. Open round the clock to serve night travelers, bus passengers, and long-distance commuters.</p>
-                        
-                        <div class="highway-features">
-                            <h4>Highway Café Features:</h4>
-                            <ul>
-                                <li><i class="fas fa-bus"></i> Ample parking for buses and cars</li>
-                                <li><i class="fas fa-bed"></i> Rest area for tired travelers</li>
-                                <li><i class="fas fa-utensils"></i> Full menu available 24/7</li>
-                                <li><i class="fas fa-car-battery"></i> Charging stations for devices</li>
-                                <li><i class="fas fa-restroom"></i> Clean restroom facilities</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="highway-audience">
-                            <h4>Popular Among:</h4>
-                            <div class="audience-tags">
-                                <span class="audience-tag">Night Travelers</span>
-                                <span class="audience-tag">Bus Passengers</span>
-                                <span class="audience-tag">Long-Distance Commuters</span>
-                                <span class="audience-tag">Night Riders</span>
-                                <span class="audience-tag">Truck Drivers</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="highway-gallery">
-                        <div class="gallery-main">
-                            <img src="images/cafe/highway-night.jpeg" alt="Highway Café at Night" id="main-highway-img">
-                        </div>
-                        <div class="gallery-thumbnails">
-                            <img src="images/cafe/highway-night.jpeg" alt="Night View" class="thumbnail active" data-img="images/cafe/highway-night.jpg">
-                            <img src="images/cafe/buses-parked.jpeg" alt="Buses Parked" class="thumbnail" data-img="images/cafe/buses-parked.jpg">
-                            <img src="images/cafe/travelers-dining.jpeg" alt="Travelers Dining" class="thumbnail" data-img="images/cafe/travelers-dining.jpg">
-                            <img src="images/cafe/warm-lighting.jpeg" alt="Warm Lighting" class="thumbnail" data-img="images/cafe/warm-lighting.jpg">
-                            <img src="images/cafe/rooftop-view.jpeg" alt="Rooftop View" class="thumbnail" data-img="images/cafe/rooftop-view.jpg">
-                        </div>
-                    </div>
+            <div class="gallery-main">
+                <img src="images/cafe/highway-night.jpeg" alt="Highway Café at Night" id="main-highway-img">
+            </div>
+            
+            <div class="gallery-thumbnails">
+                <div class="thumbnail active" data-img="images/cafe/highway-night.jpeg">
+                    <img src="images/cafe/highway-night.jpeg" alt="Night View">
+                </div>
+                <div class="thumbnail" data-img="images/cafe/buses-parked.jpeg">
+                    <img src="images/cafe/buses-parked.jpeg" alt="Buses Parked">
+                </div>
+                <div class="thumbnail" data-img="images/cafe/travelers-dining.jpeg">
+                    <img src="images/cafe/travelers-dining.jpeg" alt="Travelers Dining">
+                </div>
+                <div class="thumbnail" data-img="images/cafe/warm-lighting.jpeg">
+                    <img src="images/cafe/warm-lighting.jpeg" alt="Warm Lighting">
+                </div>
+                <div class="thumbnail" data-img="images/cafe/rooftop-view.jpeg">
+                    <img src="images/cafe/rooftop-view.jpeg" alt="Rooftop View">
                 </div>
             </div>
         </div>
@@ -143,34 +211,42 @@
 
     <!-- Map Section -->
     <section class="map-section">
-        <div class="container">
+        <div class="map-container">
             <div class="section-header">
                 <h2 class="section-title">Find Us</h2>
                 <p class="section-subtitle">Locations across Bangalore and the highway</p>
             </div>
             
-            <div class="map-container">
-                <div class="map-placeholder">
-                    <div class="map-overlay">
-                        <h3>Wild Crest Locations</h3>
-                        <div class="map-locations">
-                            <div class="map-location">
-                                <h4><i class="fas fa-map-marker-alt" style="color: #B68D40;"></i> Indiranagar</h4>
-                                <p>12th Main, Indiranagar</p>
+            <div class="map-placeholder">
+                <div class="map-overlay">
+                    <h3>Wild Crest Locations</h3>
+                    <div class="map-locations">
+                        <div class="map-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Indiranagar</h4>
+                                <p>12th Main, Indiranagar, Bangalore</p>
                             </div>
-                            <div class="map-location">
-                                <h4><i class="fas fa-map-marker-alt" style="color: #8B7355;"></i> Whitefield</h4>
-                                <p>ITPL Road, Whitefield</p>
+                        </div>
+                        <div class="map-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Whitefield</h4>
+                                <p>ITPL Road, Whitefield, Bangalore</p>
                             </div>
-                            <div class="map-location">
-                                <h4><i class="fas fa-map-marker-alt" style="color: #3C2A21;"></i> Highway Café</h4>
-                                <p>Bangalore-Mysore Highway</p>
+                        </div>
+                        <div class="map-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Highway Café</h4>
+                                <p>Bangalore-Mysore Highway, Ramanagara</p>
                             </div>
                         </div>
                     </div>
-                    <div class="map-note">
-                        <p><i class="fas fa-info-circle"></i> Interactive map integration available</p>
-                    </div>
+                </div>
+                <div class="map-note">
+                    <i class="fas fa-info-circle"></i>
+                    Interactive map integration available
                 </div>
             </div>
         </div>
@@ -178,20 +254,23 @@
 
     <!-- Contact CTA -->
     <section class="contact-cta">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Have Questions About Our Locations?</h2>
-                <p>Contact us for directions, hours, or any other inquiries about our cafés.</p>
-                <div class="cta-contacts">
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>9980554656</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>arunpatildeveloper@gmail.com</span>
-                    </div>
+        <div class="cta-container">
+            <h2 class="cta-title">Have Questions About Our Locations?</h2>
+            <p class="cta-description">Contact us for directions, hours, or any other inquiries about our cafés.</p>
+            
+            <div class="cta-contacts">
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>9980554656</span>
                 </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>arunpatildeveloper@gmail.com</span>
+                </div>
+            </div>
+            
+            <div class="cta-button">
+                <a href="index.html#contact" class="btn btn-primary">Get in Touch</a>
             </div>
         </div>
     </section>
@@ -202,8 +281,8 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="footer-logo">
-                        <img src="images/logo.jpeg" alt="Wild Crest Logo" class="logo-img">
-                        <span class="logo-text">Wild Crest</span>
+                        <i class="fas fa-coffee-bean" style="color: var(--accent-caramel); margin-right: 10px;"></i>
+                        <span>Wild Crest</span>
                     </div>
                     <p class="footer-desc">Premium café experience with coffee sourced from Chikmagalur's finest plantations.</p>
                     <div class="social-links">
@@ -250,15 +329,21 @@
 
     <script src="script.js"></script>
     <script>
-        // Highway gallery functionality
+        // Gallery functionality
         document.addEventListener('DOMContentLoaded', function() {
             const thumbnails = document.querySelectorAll('.thumbnail');
             const mainImg = document.getElementById('main-highway-img');
             
             thumbnails.forEach(thumb => {
                 thumb.addEventListener('click', function() {
-                    const newSrc = this.getAttribute('data-img');
-                    mainImg.src = newSrc;
+                    const imgSrc = this.getAttribute('data-img');
+                    
+                    // Update main image with smooth transition
+                    mainImg.style.opacity = '0.7';
+                    setTimeout(() => {
+                        mainImg.src = imgSrc;
+                        mainImg.style.opacity = '1';
+                    }, 200);
                     
                     // Update active thumbnail
                     thumbnails.forEach(t => t.classList.remove('active'));
