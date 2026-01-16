@@ -856,10 +856,11 @@ img {
     margin-right: 5px;
 }
 
-/* Highway Section */
+/* Highway Section - Updated for Mobile Responsiveness */
 .highway-section {
-    padding: 80px 0;
+    padding: 60px 0;
     background-color: var(--accent-cream);
+    overflow: hidden; /* Prevent horizontal overflow */
 }
 
 .highway-location {
@@ -867,97 +868,166 @@ img {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 5px 15px var(--shadow);
+    max-width: 100%; /* Ensure it doesn't overflow */
 }
 
 .highway-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    padding: 40px;
+    display: flex;
+    flex-direction: column; /* Stack vertically on mobile */
+    gap: 30px;
+    padding: 20px; /* Reduced padding on mobile */
+}
+
+.highway-text {
+    flex: 1;
+    padding: 0;
 }
 
 .highway-text h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem; /* Smaller on mobile */
     margin-bottom: 15px;
+    color: var(--primary-dark);
+    line-height: 1.3;
+}
+
+.highway-text .location-address {
+    color: var(--accent-caramel);
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.highway-text .location-hours {
+    margin-bottom: 15px;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.highway-text .location-hours i {
+    color: var(--accent-caramel);
+    margin-right: 8px;
+}
+
+.highway-text .location-desc {
+    margin-bottom: 25px;
+    color: var(--text-light);
+    line-height: 1.6;
 }
 
 .highway-features {
-    margin: 30px 0;
+    margin: 25px 0;
+    padding: 20px;
+    background-color: rgba(246, 243, 233, 0.5);
+    border-radius: 8px;
 }
 
 .highway-features h4 {
     margin-bottom: 15px;
     color: var(--primary-dark);
+    font-size: 1.2rem;
 }
 
 .highway-features ul {
-    margin-left: 20px;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .highway-features li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     color: var(--text-light);
+    display: flex;
+    align-items: flex-start;
+    padding-left: 0;
 }
 
 .highway-features i {
     color: var(--accent-caramel);
-    margin-right: 10px;
+    margin-right: 12px;
+    min-width: 20px;
+    margin-top: 2px;
+    font-size: 1rem;
 }
 
 .highway-audience {
-    margin-top: 30px;
+    margin-top: 25px;
+    padding: 20px;
+    background-color: rgba(246, 243, 233, 0.5);
+    border-radius: 8px;
 }
 
 .highway-audience h4 {
     margin-bottom: 15px;
     color: var(--primary-dark);
+    font-size: 1.2rem;
 }
 
 .audience-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 8px;
 }
 
 .audience-tag {
-    background-color: var(--accent-cream);
-    padding: 8px 15px;
+    background-color: var(--accent-caramel);
+    color: var(--white);
+    padding: 6px 12px;
     border-radius: 20px;
-    font-size: 0.9rem;
-    color: var(--text-light);
+    font-size: 0.85rem;
+    font-weight: 500;
 }
 
 .highway-gallery {
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
 .gallery-main {
-    height: 300px;
+    height: 250px; /* Fixed height for mobile */
     border-radius: 8px;
     overflow: hidden;
+    width: 100%;
 }
 
 .gallery-main img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .gallery-thumbnails {
     display: flex;
-    gap: 10px;
+    gap: 8px;
+    overflow-x: auto; /* Allow horizontal scroll if needed */
+    padding: 5px 0;
+    scrollbar-width: thin;
+}
+
+.gallery-thumbnails::-webkit-scrollbar {
+    height: 5px;
+}
+
+.gallery-thumbnails::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.gallery-thumbnails::-webkit-scrollbar-thumb {
+    background: var(--accent-caramel);
+    border-radius: 10px;
 }
 
 .thumbnail {
-    width: 80px;
-    height: 60px;
+    min-width: 70px; /* Fixed minimum width */
+    height: 50px;
     border-radius: 4px;
     overflow: hidden;
     cursor: pointer;
     opacity: 0.7;
     transition: var(--transition);
+    flex-shrink: 0; /* Prevent shrinking */
 }
 
 .thumbnail:hover, .thumbnail.active {
@@ -969,6 +1039,38 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+    .highway-content {
+        flex-direction: row; /* Side by side on desktop */
+        gap: 40px;
+        padding: 40px;
+    }
+    
+    .highway-text h3 {
+        font-size: 1.8rem;
+    }
+    
+    .highway-features, .highway-audience {
+        padding: 25px;
+    }
+    
+    .gallery-main {
+        height: 300px;
+    }
+    
+    .thumbnail {
+        min-width: 80px;
+        height: 60px;
+    }
+    
+    .audience-tag {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
 }
 
 /* Map Section */
