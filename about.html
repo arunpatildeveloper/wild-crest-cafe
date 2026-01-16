@@ -44,17 +44,17 @@
         <div class="container">
             <div class="founder-content">
                 <div class="founder-text">
-                    <h2 class="section-title">Founded by Arun</h2>
+                    <h2 class="section-title">Founded by Arun Patil</h2>
                     <p>Wild Crest began with Arun's passion for authentic South Indian coffee and his dream to create a space where people could experience premium coffee in a warm, welcoming environment.</p>
                     <p>As a coffee lover and entrepreneur, Arun traveled across Karnataka, discovering the rich coffee plantations of Chikmagalur. He was captivated by the quality and flavor of the beans, and committed to bringing this authentic taste to urban coffee lovers.</p>
                     <blockquote class="founder-quote">
                         "Coffee is more than a drink—it's an experience that brings people together, fuels conversations, and creates memories."
-                        <cite>— Arun, Founder</cite>
+                        <cite>— Arun Patil<br>Founder & CEO, Wild Crest</cite>
                     </blockquote>
                 </div>
                 <div class="founder-img">
-                    <img src="images/cafe/founder-placeholder.jpeg" alt="Arun, Founder of Wild Crest">
-                    <div class="img-caption">Arun at Chikmagalur coffee plantation</div>
+                    <img src="images/cafe/arun.png" alt="Arun Patil, Founder of Wild Crest at Chikmagalur coffee plantation">
+                    <div class="img-caption">Arun Patil at Chikmagalur coffee plantation</div>
                 </div>
             </div>
         </div>
@@ -101,7 +101,7 @@
         <div class="container">
             <div class="experience-content">
                 <div class="experience-img">
-                    <img src="images/cafe/interior-2.jpeg" alt="Wild Crest Café Interior">
+                    <img src="images/cafe/interior-2.jpeg" alt="Wild Crest Café Interior showcasing warm ambiance">
                 </div>
                 <div class="experience-text">
                     <h2>The Wild Crest Experience</h2>
@@ -189,11 +189,15 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2023 Wild Crest Premium Café. All rights reserved.</p>
+                <p>&copy; <span id="current-year"></span> Wild Crest Premium Café. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Update copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

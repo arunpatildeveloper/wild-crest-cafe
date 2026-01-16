@@ -15,7 +15,7 @@
         <div class="nav-container">
             <a href="index.html" class="logo">
                 <img src="images/logo.jpeg" alt="Wild Crest Logo" class="logo-img">
-                <span class="logo-text">Wild <i class="fa-solid fa-coffee-bean"></i> Crest</span>
+                <span class="logo-text">Wild Crest</span>
             </a>
             
             <button class="menu-toggle" aria-label="Toggle menu">
@@ -47,20 +47,20 @@
         <!-- Image Gallery -->
         <div class="hero-gallery">
             <div class="gallery-item">
-                <img src="images/coffee/classic-roast.jpeg" alt="Classic Roast Coffee" class="gallery-img">
-                <div class="gallery-overlay">Classic Roast</div>
+                <img src="images/coffee/classic-roast.jpeg" alt="Wild Crest Classic Roast Coffee" class="gallery-img">
+                <div class="gallery-overlay">Premium Coffee</div>
             </div>
             <div class="gallery-item">
-                <img src="images/food/burger.jpeg" alt="Premium Burger" class="gallery-img">
+                <img src="images/food/burger.jpeg" alt="Wild Crest Gourmet Burger" class="gallery-img">
                 <div class="gallery-overlay">Gourmet Burgers</div>
             </div>
             <div class="gallery-item">
-                <img src="images/cafe/interior.jpeg" alt="Café Interior" class="gallery-img">
+                <img src="images/cafe/interior.jpeg" alt="Wild Crest Café Interior" class="gallery-img">
                 <div class="gallery-overlay">Relaxing Ambiance</div>
             </div>
             <div class="gallery-item">
-                <img src="images/merch/mug-combo.jpeg" alt="Mug Combo" class="gallery-img">
-                <div class="gallery-overlay">Premium Merchandise</div>
+                <img src="images/merch/mug-combo.jpeg" alt="Wild Crest Mug Combo Merchandise" class="gallery-img">
+                <div class="gallery-overlay">Merchandise</div>
             </div>
         </div>
     </section>
@@ -113,33 +113,33 @@
     <section class="coffee-preview">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Signature Blends</h2>
+                <h2 class="section-title">Premium Signature Blends</h2>
                 <p class="section-subtitle">Discover our exclusive coffee range</p>
             </div>
             
             <div class="coffee-grid">
                 <div class="coffee-card">
                     <div class="coffee-img-container">
-                        <img src="images/coffee/classic-roast.jpeg" alt="Classic Roast">
+                        <img src="images/coffee/reserve-signature-black.jpeg" alt="Wild Crest Reserve Signature Black Coffee Blend">
                     </div>
-                    <h3>Classic Roast</h3>
-                    <p>A timeless, balanced blend with rich aroma</p>
+                    <h3>Wild Crest Reserve – Signature Black</h3>
+                    <p>Our flagship blend - a perfect harmony of premium Arabica beans with notes of dark chocolate and toasted nuts.</p>
                 </div>
                 
                 <div class="coffee-card">
                     <div class="coffee-img-container">
-                        <img src="images/coffee/french-vanilla.jpeg" alt="French Vanilla">
+                        <img src="images/coffee/monsoon-malabar.jpeg" alt="Wild Crest Monsoon Malabar Special Edition Coffee">
                     </div>
-                    <h3>French Vanilla</h3>
-                    <p>Sweet vanilla notes with smooth coffee base</p>
+                    <h3>Wild Crest – Monsoon Malabar (Special Edition)</h3>
+                    <p>A bold and earthy blend with deep, smooth flavors, subtle notes of spice and cocoa, and a rich, lingering finish.</p>
                 </div>
                 
                 <div class="coffee-card">
                     <div class="coffee-img-container">
-                        <img src="images/coffee/silk-caramel-latte.jpeg" alt="Silk Caramel Latte">
+                        <img src="images/coffee/chikmagalur-gold.jpeg" alt="Wild Crest Chikmagalur Gold Coffee Blend">
                     </div>
-                    <h3>Silk Caramel Latte</h3>
-                    <p>Creamy caramel infused with premium espresso</p>
+                    <h3>Wild Crest – Chikmagalur Gold</h3>
+                    <p>A smooth and elegant blend with soft caramel notes, gentle sweetness, and a balanced, refined finish.</p>
                 </div>
             </div>
             
@@ -212,11 +212,15 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2023 Wild Crest Premium Café. All rights reserved.</p>
+                <p>&copy; <span id="current-year"></span> Wild Crest Premium Café. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Update copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

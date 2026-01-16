@@ -13,9 +13,7 @@
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <div class="logo-icon">
-                    <i class="fa-solid fa-coffee-bean"></i>
-                </div>
+                <img src="images/logo.jpeg" alt="Wild Crest Logo" class="logo-img">
                 <span class="logo-text">Wild Crest</span>
             </a>
             
@@ -33,10 +31,10 @@
         </div>
     </nav>
 
-    <!-- Branches Hero -->
+    <!-- Page Hero -->
     <section class="page-hero branches-hero">
         <div class="container">
-            <h1 class="page-title">Our Locations</h1>
+            <h1 class="page-title">Our Branches</h1>
             <p class="page-subtitle">Find your nearest Wild Crest café</p>
         </div>
     </section>
@@ -52,7 +50,7 @@
             <!-- Indiranagar Branch -->
             <div class="location-card">
                 <div class="location-image">
-                    <img src="images/cafe/indiranagar.jpeg" alt="Wild Crest Indiranagar">
+                    <img src="images/cafe/indiranagar.jpeg" alt="Wild Crest Indiranagar Branch Interior">
                 </div>
                 <div class="location-content">
                     <div class="location-header">
@@ -90,7 +88,7 @@
             <!-- Whitefield Branch -->
             <div class="location-card">
                 <div class="location-image">
-                    <img src="images/cafe/whitefield.jpeg" alt="Wild Crest Whitefield">
+                    <img src="images/cafe/whitefield.jpeg" alt="Wild Crest Whitefield Branch Interior">
                 </div>
                 <div class="location-content">
                     <div class="location-header">
@@ -128,7 +126,7 @@
             <!-- Highway Branch -->
             <div class="location-card">
                 <div class="location-image">
-                    <img src="images/cafe/highway-night.jpeg" alt="Wild Crest Highway Café">
+                    <img src="images/cafe/highway-night.jpeg" alt="Wild Crest Highway Café at Night">
                 </div>
                 <div class="location-content">
                     <div class="location-header">
@@ -177,81 +175,6 @@
         </div>
     </section>
 
-    <!-- Highway Gallery -->
-    <section class="highway-gallery-section">
-        <div class="highway-gallery-container">
-            <div class="section-header">
-                <h2 class="section-title">Highway Café Experience</h2>
-                <p class="section-subtitle">A warm welcome for every traveler</p>
-            </div>
-            
-            <div class="gallery-main">
-                <img src="images/cafe/highway-night.jpeg" alt="Highway Café at Night" id="main-highway-img">
-            </div>
-            
-            <div class="gallery-thumbnails">
-                <div class="thumbnail active" data-img="images/cafe/highway-night.jpeg">
-                    <img src="images/cafe/highway-night.jpeg" alt="Night View">
-                </div>
-                <div class="thumbnail" data-img="images/cafe/buses-parked.jpeg">
-                    <img src="images/cafe/buses-parked.jpeg" alt="Buses Parked">
-                </div>
-                <div class="thumbnail" data-img="images/cafe/travelers-dining.jpeg">
-                    <img src="images/cafe/travelers-dining.jpeg" alt="Travelers Dining">
-                </div>
-                <div class="thumbnail" data-img="images/cafe/warm-lighting.jpeg">
-                    <img src="images/cafe/warm-lighting.jpeg" alt="Warm Lighting">
-                </div>
-                <div class="thumbnail" data-img="images/cafe/rooftop-view.jpeg">
-                    <img src="images/cafe/rooftop-view.jpeg" alt="Rooftop View">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <section class="map-section">
-        <div class="map-container">
-            <div class="section-header">
-                <h2 class="section-title">Find Us</h2>
-                <p class="section-subtitle">Locations across Bangalore and the highway</p>
-            </div>
-            
-            <div class="map-placeholder">
-                <div class="map-overlay">
-                    <h3>Wild Crest Locations</h3>
-                    <div class="map-locations">
-                        <div class="map-location">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Indiranagar</h4>
-                                <p>12th Main, Indiranagar, Bangalore</p>
-                            </div>
-                        </div>
-                        <div class="map-location">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Whitefield</h4>
-                                <p>ITPL Road, Whitefield, Bangalore</p>
-                            </div>
-                        </div>
-                        <div class="map-location">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h4>Highway Café</h4>
-                                <p>Bangalore-Mysore Highway, Ramanagara</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="map-note">
-                    <i class="fas fa-info-circle"></i>
-                    Interactive map integration available
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact CTA -->
     <section class="contact-cta">
         <div class="cta-container">
@@ -281,8 +204,8 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <div class="footer-logo">
-                        <i class="fas fa-coffee-bean" style="color: var(--accent-caramel); margin-right: 10px;"></i>
-                        <span>Wild Crest</span>
+                        <img src="images/logo.jpeg" alt="Wild Crest Logo" class="logo-img">
+                        <span class="logo-text">Wild Crest</span>
                     </div>
                     <p class="footer-desc">Premium café experience with coffee sourced from Chikmagalur's finest plantations.</p>
                     <div class="social-links">
@@ -322,35 +245,15 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2023 Wild Crest Premium Café. All rights reserved.</p>
+                <p>&copy; <span id="current-year"></span> Wild Crest Premium Café. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
     <script>
-        // Gallery functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const thumbnails = document.querySelectorAll('.thumbnail');
-            const mainImg = document.getElementById('main-highway-img');
-            
-            thumbnails.forEach(thumb => {
-                thumb.addEventListener('click', function() {
-                    const imgSrc = this.getAttribute('data-img');
-                    
-                    // Update main image with smooth transition
-                    mainImg.style.opacity = '0.7';
-                    setTimeout(() => {
-                        mainImg.src = imgSrc;
-                        mainImg.style.opacity = '1';
-                    }, 200);
-                    
-                    // Update active thumbnail
-                    thumbnails.forEach(t => t.classList.remove('active'));
-                    this.classList.add('active');
-                });
-            });
-        });
+        // Update copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
