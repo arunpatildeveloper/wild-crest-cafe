@@ -63,18 +63,21 @@ Wild Crest Café aims to blend quality, comfort, and culture — creating a spac
 
 ## 👤 Credits
 
-Concept & Planning:  
+**Concept & Planning:**  
 Arun  
 
-Visual Design & Creative Direction:  
-Arun (with AI-assisted visual ideation)
+**Design Direction & Visual Concepts:**  
+Arun  
 
-Development:  
+**Image Generation & Visual Assets:**  
+ChatGPT  
+
+**Development:**  
 Arun & DeepSeek  
-(Primary development support provided by DeepSeek)
+*(Primary development support provided by DeepSeek)*  
 
-Brand:  
-Wild Crest  
+**Brand:**  
+Wild Crest
 
 ---
 
